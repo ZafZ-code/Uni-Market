@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes favoris – Uni-Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body data-static class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable um-skip" href="#main">Aller au contenu</a>
+
+  <nav class="navbar navbar-expand-lg um-navbar sticky-top" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-bag-heart-fill" aria-hidden="true"></i> Uni-Market
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <form class="d-flex flex-grow-1 my-2 my-lg-0 mx-lg-4" role="search" action="index.html" method="get">
+          <label for="nav-q" class="visually-hidden">Rechercher une annonce</label>
+          <input id="nav-q" class="form-control" type="search" name="q" value=""
+                 placeholder="Rechercher un livre, une calculatrice…">
+          <button class="btn btn-primary ms-2" type="submit" aria-label="Rechercher"><i class="bi bi-search" aria-hidden="true"></i></button>
+        </form>
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          
+          <li class="nav-item">
+            <a class="btn btn-success" href="publier.html"><i class="bi bi-plus-lg" aria-hidden="true"></i> Vendre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i> Messages</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-circle" aria-hidden="true"></i> Mohamed
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="mes-annonces.html">Mes annonces</a></li>
+              <li><a class="dropdown-item" href="favoris.html">Mes favoris</a></li>
+              <li><a class="dropdown-item" href="profil.html">Mon profil</a></li>
+              
+              <li><a class="dropdown-item" href="admin.html">Administration</a></li>
+              
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html">Déconnexion</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main" class="flex-grow-1">
+    <div class="container pt-3">
+      
+        
+      
+    </div>
+    
+<div class="container">
+  <h1 class="h4 mb-3">Mes favoris</h1>
+  
+  <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-3">
+    
+<div class="col">
+  <article class="card um-card h-100">
+    <div class="um-card-media">
+      <img src="static/img/placeholder.svg" alt="" loading="lazy" width="400" height="300">
+      
+      
+  
+  
+  <button type="button" class="um-fav active" data-url="/_toggle_favorite/1"
+          data-remove="1"
+          aria-pressed="true" aria-label="Retirer des favoris">
+    <i class="bi bi-heart-fill" aria-hidden="true"></i>
+  </button>
+  
+
+    </div>
+    <div class="card-body">
+      <span class="um-cat">Livres</span>
+      <h3 class="h6 card-title my-1">
+        <a href="detail.html" class="stretched-link text-reset text-decoration-none">Algorithmique – Cormen</a>
+      </h3>
+      <p class="um-price mb-1">45.00 DT</p>
+      <p class="small text-muted mb-0">Abderahmen Abdelmoula · 13/11/2026</p>
+    </div>
+  </article>
+</div>
+
+<div class="col">
+  <article class="card um-card h-100">
+    <div class="um-card-media">
+      <img src="static/img/placeholder.svg" alt="" loading="lazy" width="400" height="300">
+      
+      
+  
+  
+  <button type="button" class="um-fav active" data-url="/_toggle_favorite/2"
+          data-remove="1"
+          aria-pressed="true" aria-label="Retirer des favoris">
+    <i class="bi bi-heart-fill" aria-hidden="true"></i>
+  </button>
+  
+
+    </div>
+    <div class="card-body">
+      <span class="um-cat">Calculatrices</span>
+      <h3 class="h6 card-title my-1">
+        <a href="detail.html" class="stretched-link text-reset text-decoration-none">Casio fx-991EX</a>
+      </h3>
+      <p class="um-price mb-1">60.00 DT</p>
+      <p class="small text-muted mb-0">Abderahmen Abdelmoula · 13/11/2026</p>
+    </div>
+  </article>
+</div>
+
+<div class="col">
+  <article class="card um-card h-100">
+    <div class="um-card-media">
+      <img src="static/img/placeholder.svg" alt="" loading="lazy" width="400" height="300">
+      
+      
+  
+  
+  <button type="button" class="um-fav active" data-url="/_toggle_favorite/3"
+          data-remove="1"
+          aria-pressed="true" aria-label="Retirer des favoris">
+    <i class="bi bi-heart-fill" aria-hidden="true"></i>
+  </button>
+  
+
+    </div>
+    <div class="card-body">
+      <span class="um-cat">Cours</span>
+      <h3 class="h6 card-title my-1">
+        <a href="detail.html" class="stretched-link text-reset text-decoration-none">Cours Réseaux 2e année</a>
+      </h3>
+      <p class="um-price mb-1">8.00 DT</p>
+      <p class="small text-muted mb-0">Abderahmen Abdelmoula · 13/11/2026</p>
+    </div>
+  </article>
+</div>
+
+<div class="col">
+  <article class="card um-card h-100">
+    <div class="um-card-media">
+      <img src="static/img/placeholder.svg" alt="" loading="lazy" width="400" height="300">
+      <span class="um-badge um-badge-sold">Vendu</span>
+      
+  
+  
+  <button type="button" class="um-fav active" data-url="/_toggle_favorite/4"
+          data-remove="1"
+          aria-pressed="true" aria-label="Retirer des favoris">
+    <i class="bi bi-heart-fill" aria-hidden="true"></i>
+  </button>
+  
+
+    </div>
+    <div class="card-body">
+      <span class="um-cat">Informatique</span>
+      <h3 class="h6 card-title my-1">
+        <a href="detail.html" class="stretched-link text-reset text-decoration-none">Clavier mécanique</a>
+      </h3>
+      <p class="um-price mb-1">70.00 DT</p>
+      <p class="small text-muted mb-0">Abderahmen Abdelmoula · 13/11/2026</p>
+    </div>
+  </article>
+</div>
+
+  </div>
+  
+</div>
+
+  </main>
+
+  <footer class="um-footer mt-5 py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 small">
+      <span>© 2026 Uni-Market – ENET'Com Sfax</span>
+      <span>Les échanges et paiements se font directement entre étudiants.</span>
+    </div>
+  </footer>
+
+  <div id="toasts" class="toast-container position-fixed bottom-0 end-0 p-3" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/main.js"></script>
+  
+</body>
+</html>

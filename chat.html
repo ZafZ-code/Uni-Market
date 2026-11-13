@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversation – Uni-Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body data-static class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable um-skip" href="#main">Aller au contenu</a>
+
+  <nav class="navbar navbar-expand-lg um-navbar sticky-top" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-bag-heart-fill" aria-hidden="true"></i> Uni-Market
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <form class="d-flex flex-grow-1 my-2 my-lg-0 mx-lg-4" role="search" action="index.html" method="get">
+          <label for="nav-q" class="visually-hidden">Rechercher une annonce</label>
+          <input id="nav-q" class="form-control" type="search" name="q" value=""
+                 placeholder="Rechercher un livre, une calculatrice…">
+          <button class="btn btn-primary ms-2" type="submit" aria-label="Rechercher"><i class="bi bi-search" aria-hidden="true"></i></button>
+        </form>
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          
+          <li class="nav-item">
+            <a class="btn btn-success" href="publier.html"><i class="bi bi-plus-lg" aria-hidden="true"></i> Vendre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i> Messages</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-circle" aria-hidden="true"></i> Mohamed
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="mes-annonces.html">Mes annonces</a></li>
+              <li><a class="dropdown-item" href="favoris.html">Mes favoris</a></li>
+              <li><a class="dropdown-item" href="profil.html">Mon profil</a></li>
+              
+              <li><a class="dropdown-item" href="admin.html">Administration</a></li>
+              
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html">Déconnexion</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main" class="flex-grow-1">
+    <div class="container pt-3">
+      
+        
+      
+    </div>
+    
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="um-panel mt-2">
+        <header class="d-flex align-items-center gap-3 p-3 border-bottom">
+          <a href="messages.html" class="btn btn-sm btn-outline-secondary" aria-label="Retour aux conversations"><i class="bi bi-arrow-left" aria-hidden="true"></i></a>
+          <div class="min-w-0">
+            <h1 class="h6 mb-0 text-truncate">Abderahmen Abdelmoula</h1>
+            <a class="small text-truncate d-block" href="detail.html">Algorithmique – Cormen · 45.00 DT</a>
+          </div>
+        </header>
+
+        <div id="chat-box" class="um-chat p-3" role="log" aria-live="polite" aria-label="Messages">
+          
+          <div class="um-bubble me">
+            <p class="mb-1">Bonjour, le livre est toujours disponible ?</p>
+            <span class="um-time">13/11 20:27</span>
+          </div>
+          
+          <div class="um-bubble them">
+            <p class="mb-1">Oui ! On se voit demain à la bibliothèque.</p>
+            <span class="um-time">13/11 20:27</span>
+          </div>
+          
+          <div class="um-bubble me">
+            <p class="mb-1">Parfait, 11h à la bibliothèque ?</p>
+            <span class="um-time">13/11 20:27</span>
+          </div>
+          
+        </div>
+
+        <form method="post" class="d-flex gap-2 p-3 border-top needs-validation" novalidate>
+          <label for="content" class="visually-hidden">Votre message</label>
+          <textarea id="content" name="content" rows="1" class="form-control" maxlength="1000" placeholder="Écrire un message…" required></textarea>
+          <button class="btn btn-primary" type="submit" aria-label="Envoyer"><i class="bi bi-send" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      <p class="small text-muted mt-2">Les messages ne sont pas en temps réel : actualisez la page pour voir les réponses.</p>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="um-footer mt-5 py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 small">
+      <span>© 2026 Uni-Market – ENET'Com Sfax</span>
+      <span>Les échanges et paiements se font directement entre étudiants.</span>
+    </div>
+  </footer>
+
+  <div id="toasts" class="toast-container position-fixed bottom-0 end-0 p-3" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/main.js"></script>
+  
+</body>
+</html>
